@@ -26,8 +26,9 @@ const TodoForm = ({ refreshTodos }: { refreshTodos: () => void }) => {
           value={task}
           onChange={(e) => setTask(e.target.value)}
           placeholder="Add a task"
-          className="border p-2 rounded w-full md:w-auto"
+          className="border p-2 rounded w-full md:w-96 lg:w-[500px]"
         />
+
         <select
           value={label}
           onChange={(e) => setLabel(e.target.value)}

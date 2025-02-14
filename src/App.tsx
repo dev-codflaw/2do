@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Route, Routes } from "react-router-dom";
+
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import TodoPage from './pages/TodoPage';
@@ -6,7 +7,7 @@ import IdeaPage from './pages/IdeaPage';
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <Navbar />
       <div className="p-4">
         <Routes>
@@ -15,8 +16,8 @@ const App = () => {
           <Route path="/ideas" element={<IdeaPage />} />
         </Routes>
       </div>
-    </Router>
-  );
+      </HashRouter>
+    );
 };
 
 export default App;

@@ -1,4 +1,5 @@
 {
+  "homepage": "hhttps://dev-codflaw.github.io/2do",
   "name": "my-vue-app",
   "private": true,
   "version": "0.0.0",
@@ -10,10 +11,11 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
+    "dexie": "^4.0.11",
+    "dexie-export-import": "^4.1.4",
     "idb": "^8.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
